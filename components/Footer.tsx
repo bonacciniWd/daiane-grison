@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-4">
-        <img src="/logo.png" alt="Logo Daiane Grison" className="mx-auto h-32 w-auto" />
+        <Image src="/logo.png" alt="Logo Daiane Grison" className="mx-auto h-32 w-auto" />
       </div>
 
       <div className="mt-4 text-sm">
