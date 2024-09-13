@@ -9,8 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'tantra': '#BE163F',
+        'tantra-light': '#F299B0',
+        'tantra-dark': '#2A1820',
+        'dourado': '#CBA148',
+        'dourado-hover': '#D3B34B',
       },
     },
   },

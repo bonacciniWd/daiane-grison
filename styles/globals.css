@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Importar fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Aplicar a fonte Montserrat a todo o site */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Definir Montserrat como fonte padrão */
+  color: #333; /* Cor padrão do texto, ajuste conforme necessário */
+  line-height: 1.6; /* Melhorar a legibilidade */
+}
+
+/* Estilo padrão para títulos e subtítulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif; /* Garantir que títulos usem a mesma fonte */
+  font-weight: 700; /* Peso negrito para títulos */
+}
+
+/* Estilo para parágrafos */
+p {
+  font-family: 'Montserrat', sans-serif; /* Garantir que parágrafos usem a mesma fonte */
+  font-weight: 400; /* Peso normal para o texto */
+}
+
+/* Outros estilos globais, se necessários */
+a {
+  font-family: 'Montserrat', sans-serif; /* Garantir que links usem a mesma fonte */
+}
+
+button {
+  font-family: 'Montserrat', sans-serif; /* Garantir que botões usem a mesma fonte */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+.bg-tantra-dark {
+  background: linear-gradient(270deg, #2A1820, #4b242f, #c03056);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+
+
+.bg-tantra {
+  background: linear-gradient(270deg, #BE163F, #2A1820, #4B2D47,);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+.shadow-lg {
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.text-tantra-light {
+  color: #f9e2ea; /* Rosa claro */
+}
+
+.text-tantra-light2 {
+  color: #f7b7cd; /* Rosa claro */
+}
+
+.text-tantra-dark {
+  color: #1d1618; /* Bordô */
+}
+
+
+
+.spacebar {
+  width: 100%; /* Preenche a largura total */
+  height: 4px; /* Altura do espaço */
+  background: linear-gradient(90deg, #131312, #D3B34B, #0c0c0c, #2e2b23); /* Gradiente dourado */
+  background-size: 300% 50%; /* Aumenta o tamanho do gradiente para criar o movimento */
+  animation: moveGradient 10s linear infinite; /* Animação de movimento */
+}
+
+/* Animação que move o gradiente da esquerda para a direita */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 30s linear infinite; /* Duração de 30 segundos */
+}
+
+/* Gradiente de fundo com animação */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.15); /* Ajuste o valor conforme a intensidade do efeito desejado */
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1.5s infinite; /* Ajuste a duração conforme necessário */
+}
+
+.border-gold {
+  border-color: #CBA148;
+}
+
+/* Gradiente animado */
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #CBA148, #A77B13);
+  background-size: 200% 100%;
+  animation: gradientShift 3s linear infinite;
+}
+
+/* Animação de gradiente */
+@keyframes gradientShift {
+  0% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
