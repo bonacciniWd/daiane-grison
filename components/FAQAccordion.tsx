@@ -30,13 +30,13 @@ const FAQAccordion = () => {
     // Adicione mais perguntas e respostas aqui
   ];
 
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFAQ = (index) => {
+  const toggleFAQ = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(null); // Fecha se já estiver aberto
     } else {
-      setOpenIndex(index); // Abre o novo item
+      setOpenIndex(index); // Abre o FAQ clicado
     }
   };
 
