@@ -10,12 +10,13 @@ export default function Footer() {
         <Link href="/faq" className="hover:underline">Perguntas Frequentes</Link>
       </div>
 
-      <div className="mt-4">
-        <Image src="/logo.png" alt="Logo Daiane Grison" className="mx-auto h-32 w-auto" />
-      </div>
-
       <div className="mt-4 text-sm">
         <p>Contato: <a href="mailto:contato@daianegrison.com" className="underline">contato@daianegrison.com</a></p>
+        <div className="mt-4">
+        <Image src="/logo.png" alt="Logo Daiane Grison" className="mx-auto " width={140} 
+          height={140}/>
+      </div>
+
         <p>Siga nas redes sociais</p>
         <div className="mt-2 space-x-4">
           <a href="https://facebook.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Facebook</a>

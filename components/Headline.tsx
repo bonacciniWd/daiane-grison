@@ -22,7 +22,9 @@ export default function Headline() {
         <Image
           src="/react-atoma.png"
           alt="React Atom"
-          className="w-72 h-72 animate-slow-spin" // Tamanho ajustado e animação de spin lenta
+          className="animate-slow-spin" 
+          width={300} 
+          height={300}
         />
       </div>
 
@@ -31,7 +33,9 @@ export default function Headline() {
         <Image
           src="/chakras.png"
           alt="Chakras"
-          className="w-44 h-44 mx-auto animate-pulse" // 11rem = 44px
+          className=" mx-auto animate-pulse"
+          width={176} 
+          height={176}
         />
       </div>
 
