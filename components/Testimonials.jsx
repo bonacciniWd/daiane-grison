@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const testimonials = [
   {
@@ -53,7 +54,7 @@ const Testimonials = () => {
               key={index}
               className="bg-white opacity-90 shadow-lg p-6 rounded-lg flex flex-col items-center space-y-4 max-w-md mx-auto"
             >
-              <img
+              <Image
                 src={testimonial.image}
                 alt={testimonial.name}
                 className="w-24 h-24 rounded-full border-2 border-gold"

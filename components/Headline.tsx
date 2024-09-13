@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Headline() {
   
   return (
@@ -17,7 +19,7 @@ export default function Headline() {
       
       <div className="absolute inset-0 flex items-center justify-center z-10"
            style={{ transform: 'translateY(-95px)' }}> {/* Move 20px para cima */}
-        <img
+        <Image
           src="/react-atoma.png"
           alt="React Atom"
           className="w-72 h-72 animate-slow-spin" // Tamanho ajustado e animação de spin lenta
@@ -26,7 +28,7 @@ export default function Headline() {
 
       {/* Imagem dos chakras, posicionada à frente */}
       <div className="relative z-20 my-8">
-        <img
+        <Image
           src="/chakras.png"
           alt="Chakras"
           className="w-44 h-44 mx-auto animate-pulse" // 11rem = 44px
