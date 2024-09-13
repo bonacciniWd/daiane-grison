@@ -1,6 +1,5 @@
-"use client";
-import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -25,48 +24,38 @@ const testimonials = [
   },
 ];
 
-const Testimonials = () => {
+export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Alterna entre os testemunhos a cada 30 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 2) % testimonials.length);
-    }, 30000); // 30 segundos
+    }, 30000); // Troca a cada 30 segundos
+
     return () => clearInterval(interval); // Limpa o intervalo ao desmontar o componente
   }, []);
 
-  // Exibe dois testemunhos por vez
-  const visibleTestimonials = [
-    testimonials[currentIndex],
-    testimonials[(currentIndex + 1) % testimonials.length],
-  ];
+  const displayTestimonials = testimonials.slice(currentIndex, currentIndex + 2);
+  // Se o slice ultrapassar o final, começa do início
+  if (currentIndex + 2 > testimonials.length) {
+    displayTestimonials.push(...testimonials.slice(0, (currentIndex + 2) % testimonials.length));
+  }
 
   return (
-    <section className="py-16 bg-tantra" id="testimonials">
-      <div className="max-w-4xl mx-auto text-center px-4">
-        <h4 className="text-xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3 mb-7">
-          Clientes Satisfeitos
-        </h4>
-        <div className="flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
-          {visibleTestimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white opacity-90 shadow-lg p-6 rounded-lg flex flex-col items-center space-y-4 max-w-md mx-auto"
-            >
-              <Image
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-24 h-24 rounded-full border-2 border-gold"
-              />
-              <p className="text-lg text-gray-700 italic">"{testimonial.text}"</p>
-              <p className="font-semibold text-tantra-dark">- {testimonial.name}</p>
-            </div>
-          ))}
+    <div className="testimonial-container">
+      {displayTestimonials.map((testimonial, index) => (
+        <div key={index} className="testimonial-card">
+          <Image
+            src={testimonial.image}
+            alt={`Foto de ${testimonial.name}`}
+            width={100} // Ajuste o tamanho conforme necessário
+            height={100} // Ajuste o tamanho conforme necessário
+            className="rounded-full border-2 border-gold"
+          />
+          <p>{testimonial.text}</p>
+          <p><strong>{testimonial.name}</strong></p>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
-};
-
-export default Testimonials;
+}
