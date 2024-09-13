@@ -2,6 +2,7 @@ import Headline from '../components/Headline';
 import About from '../components/About'
 import FAQAccordion from '../components/FAQAccordion';
 import Details from '../components/Details';
+import Testimonials from '../components/Testimonials';
 import Spacebar from '../components/Spacebar';
 import Footer from '@/components/Footer';
 
@@ -14,6 +15,8 @@ export default function Home() {
       <About />
       <Spacebar />
       <Details />
+      <Spacebar />
+      <Testimonials />
       <Spacebar />
       <FAQAccordion />
       <Spacebar />

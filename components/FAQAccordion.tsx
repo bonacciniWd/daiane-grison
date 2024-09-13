@@ -60,7 +60,7 @@ const FAQAccordion = () => {
                 openIndex === index ? 'max-h-96' : 'max-h-0'
               }`}
             >
-              <p className="px-4 py-2 text-md md:text-lg text-tantra-light2">{faq.answer}</p>
+              <p className="px-4 bg-slate-100 py-2 text-md md:text-lg text-slate-800 ">{faq.answer}</p>
             </div>
           </div>
         ))}

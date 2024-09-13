@@ -18,7 +18,7 @@ export default function Headline() {
       <div className="absolute inset-0 flex items-center justify-center z-10"
            style={{ transform: 'translateY(-95px)' }}> {/* Move 20px para cima */}
         <img
-          src="/react-atom.png"
+          src="/react-atoma.png"
           alt="React Atom"
           className="w-72 h-72 animate-slow-spin" // Tamanho ajustado e animação de spin lenta
         />
@@ -38,7 +38,7 @@ export default function Headline() {
         <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3">
            Transcenda suas limitações
         </h1>
-        <h2 className="mt-6 text-lg md:text-2xl lg:text-2xl text-tantra-light2 max-w-3xl mx-auto">
+        <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-auto">
           Viva uma experiência transformadora de autoconhecimento e liberdade sensual em Balneário Camboriú com a Mentora Daiane Grison.
         </h2>
 

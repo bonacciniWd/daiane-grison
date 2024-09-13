@@ -7,16 +7,16 @@ export default function Details() {
           Detalhes da Experiência
         </h4>
 
-        <p className="text-lg md:text-xl text-tantra-light mb-8 text-center">
+        <p className="text-base md:text-xl text-tantra-light mb-8 text-center mx-4">
           Venha explorar o Tantra em um ambiente seguro e envolvente. Com técnicas ancestrais e toques energéticos, Daiane Grison guiará você por uma jornada de autocura e redescoberta do prazer.
         </p>
 
         {/* Lista de detalhes */}
-        <div className="bg-tantra-light p-6 rounded-lg shadow-lg">
-          <ul className="space-y-4 text-lg md:text-xl text-tantra-dark">
+        <div className="bg-white opacity-90 p-6 rounded-lg shadow-lg">
+          <ul className="space-y-4 text-center text-lg md:text-xl text-tantra-dark">
             <li>📅 <strong>Data:</strong> 28 de setembro de 2024</li>
-            <li>📍 <strong>Local:</strong> Espaço ÚNICO Tantra em Balneário Camboriú</li>
             <li>✨ <strong>Inclui:</strong> Rituais de Tantra, Meditação Guiada, Vivências de Autocuidado e Conexão Sensorial</li>
+            <li>📍 <strong>Local:</strong> Espaço ÚNICO Tantra em Balneário Camboriú</li>
           </ul>
         </div>
       </div>
