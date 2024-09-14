@@ -4,6 +4,7 @@ import FAQAccordion from '../components/FAQAccordion';
 import Details from '../components/Details';
 import Testimonials from '../components/Testimonials';
 import Spacebar from '../components/Spacebar';
+import WhatsappButton from '../components/WhatsappButton';
 import Footer from '@/components/Footer';
 
 
@@ -21,6 +22,7 @@ export default function Home() {
       <FAQAccordion />
       <Spacebar />
       <Footer />
+      <WhatsappButton />
     </div>
   );
 }
