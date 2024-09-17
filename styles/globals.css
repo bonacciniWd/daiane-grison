@@ -200,7 +200,7 @@ button {
 }
 
 /* Adiciona o efeito de pulsação ao botão */
-@keyframes pulse {
+@keyframes pulses {
   0% {
     box-shadow: 0 0 0 0 rgba(219, 33, 179, 0.889);
   }
@@ -223,7 +223,7 @@ button {
   border-radius: 1rem; /* Rounded corners */
   color: #fff; /* Texto branco */
   font-size: 1rem; /* Tamanho do texto */
-  animation: pulse 2s infinite; /* Animação de pulsação */
+  animation: pulses 2s infinite; /* Animação de pulsação */
 }
 
 .pulse-button:hover {
