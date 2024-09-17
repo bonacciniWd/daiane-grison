@@ -1,4 +1,7 @@
+"use client"
 import Image from "next/image";
+import { FaSortDown } from 'react-icons/fa';
+
 
 export default function Headline() {
   
@@ -22,7 +25,7 @@ export default function Headline() {
         <Image
           src="/logo.png"
           alt="Chakras"
-          className=" mx-auto animate-pulse"
+          className=" mx-auto"
           width={310} 
           height={310}
         />
@@ -37,8 +40,16 @@ export default function Headline() {
         <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-6">
         Desperte Seu Prazer, Conecte-se com sua Essência e Viva Plenamente
         </h2>
-
       </div>
+      <button
+        className="text-slate-300 mt-10 t font-semibold underline hover:text-white transition-colors duration-300"
+        onClick={() => {
+          // Rola suavemente até a seção com id "saiba-mais"
+          document.getElementById('element')?.scrollIntoView({ behavior: 'smooth' });
+        }}
+      >
+       <FaSortDown className="flex animate-bounce text-white size-8 mt-20"/>
+      </button>
     </main>
   );
 }

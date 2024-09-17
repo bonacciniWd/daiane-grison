@@ -141,8 +141,8 @@ button {
     transform: scale(1);
   }
   50% {
-    opacity: 1;
-    transform: scale(1.15); /* Ajuste o valor conforme a intensidade do efeito desejado */
+    opacity: 0.50;
+    transform: scale(1.10); /* Ajuste o valor conforme a intensidade do efeito desejado */
   }
 }
 
@@ -228,4 +228,31 @@ button {
 
 .pulse-button:hover {
   background: #20201d87; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+@keyframes ping {
+  75%, 100% {
+      transform: scale(1.2);
+      opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-50%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+      opacity: 0.8;
+  }
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+      opacity: 0.2;
+  }
+
+}
+.animate-bounce {
+  animation: bounce 1s infinite;
 }

@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-tantra-dark">
+    <div className="min-h-screen bg-tantra-dark overflow-x-hidden">
       <Headline />
       <Spacebar />
       <Element />
