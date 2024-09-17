@@ -1,7 +1,7 @@
 // Card.jsx
 import Image from 'next/image';
 
-const Card = ({ imageSrc, name, description, buttonText, onButtonClick }) => {
+const Card = ({ imageSrc, name, description }) => {
   return (
     <div className="text-center max-w-xl mx-4 bg-white opacity-90 p-6 rounded-lg shadow-lg mt-3">
       <div className="flex justify-center mb-8">
