@@ -55,7 +55,7 @@ button {
 
 
 .bg-tantra-dark {
-  background: linear-gradient(270deg, #2A1820, #4b242f, #c03056);
+  background: linear-gradient(270deg, #4B2D47,  #2A1820, #BE163F);
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
@@ -63,7 +63,7 @@ button {
 
 
 .bg-tantra {
-  background: linear-gradient(270deg, #BE163F, #2A1820, #4B2D47,);
+  background: linear-gradient(270deg, #4B2D47, #BE163F, #2A1820, );
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
@@ -136,7 +136,7 @@ button {
     transform: scale(1);
   }
   50% {
-    opacity: 0.7;
+    opacity: 1;
     transform: scale(1.15); /* Ajuste o valor conforme a intensidade do efeito desejado */
   }
 }

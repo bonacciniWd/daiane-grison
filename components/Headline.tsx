@@ -12,40 +12,30 @@ export default function Headline() {
         loop
         muted
         playsInline
+        disablePictureInPicture
       >
         <source src="/videos/fundo.mp4" type="video/mp4" />
         Seu navegador não suporta a tag de vídeo.
       </video>
-      
-      <div className="absolute inset-0 flex items-center justify-center z-10"
-           style={{ transform: 'translateY(-95px)' }}> {/* Move 20px para cima */}
-        <Image
-          src="/react-atoma.png"
-          alt="React Atom"
-          className="animate-slow-spin" 
-          width={300} 
-          height={300}
-        />
-      </div>
 
-      {/* Imagem dos chakras, posicionada à frente */}
-      <div className="relative z-20 my-8">
+      <div className="relative z-20 my-1">
         <Image
-          src="/chakras.png"
+          src="/logo.png"
           alt="Chakras"
           className=" mx-auto animate-pulse"
-          width={176} 
-          height={176}
+          width={310} 
+          height={310}
         />
       </div>
+      
 
       {/* Texto abaixo das imagens */}
       <div className="relative z-30 mt-8">
-        <h1 className="text-2xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3">
-           Transcenda suas limitações
+        <h1 className="text-xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3 uppercase">
+        Experiência Tântrica
         </h1>
-        <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-auto">
-          Viva uma experiência transformadora de autoconhecimento e liberdade sensual em Balneário Camboriú com a Mentora Daiane Grison.
+        <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-6">
+        Desperte Seu Prazer, Conecte-se com sua Essência e Viva Plenamente
         </h2>
 
       </div>

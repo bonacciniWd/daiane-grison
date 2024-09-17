@@ -1,45 +1,35 @@
-"use client"
+"use client";
 import Image from 'next/image';
+import Card from './Card';
 
 const About = () => {
+  const handleButtonClick = () => {
+    document.getElementById('programacao')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <section className="flex flex-col items-center justify-center py-16 bg-tantra-dark text-tantra-light">
-      {/* Imagem de Daiane Grison */}
-      <div className="relative mb-8">
-        <Image
-          src="/daiane-grison.png" // Substitua pelo caminho correto da imagem
-          alt="Daiane Grison"
-          width={300} // Ajuste o tamanho conforme necessário
-          height={300} // Ajuste o tamanho conforme necessário
-          className="relative rounded-full border-4 border-gold"
+    <section className="flex flex-col items-center justify-center py-16 bg-tantra-dark text-tantra-light" id="saiba-mais">
+      <div className="flex flex-col md:flex-row lg:flex-row gap-8">
+        <Card
+          imageSrc="/daiane-grison.png"
+          name="Daiane Grison"
+          description="Terapeuta há 6 anos, Daiane Grison é especialista em Tantra, Constelação Familiar, Reiki e Reprogramação Emocional. Mãe de três meninos, atua em diversas cidades e estados do Brasil, oferecendo terapias e mentorias em cursos livres. Ela é sócia proprietária do Espaço Única em Balneário Camboriú, e seu propósito é despertar o poder transformador do Tantra em cada pessoa, promovendo uma reconexão profunda entre corpo, mente e espírito.
+"
+          buttonText="Ver programação"
+          onButtonClick={handleButtonClick}
         />
-      </div>
-      
-      {/* Texto sobre Daiane Grison */}
-      <div className="text-center max-w-xl mx-4 bg-white opacity-90 p-6 rounded-lg shadow-lg">
-        <h2 className="text-2xl text-slate-600 font-bold mb-4 md:text-3xl lg:text-3xl">Daiane Grison</h2>
-        <p className="text-base text-slate-600 md:text-lg lg:text-lg mb-8 mx-4">
-          É uma renomada mentora e também especialista em tantra, com anos de experiência em transformar vidas e promover o autoconhecimento. Seu trabalho é focado em ajudar os indivíduos a explorar seu potencial interior e alcançar uma profunda harmonia entre corpo e mente.
-        </p>
-
-       
-        <button
-          className="relative inline-block py-2 px-6 rounded text-tantra font-semibold animate-pulse"
-          onClick={() => {
-            // Adicione a lógica para rolar para a seção de programação
-            document.getElementById('programacao')?.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
-          Ver programação
-        </button>
-
+        <Card
+          imageSrc="/arjun.png" // Substitua pelo caminho correto da imagem
+          name="Arjun Das"
+          description="Arjun Das é terapeuta corporal e comportamental com mais de uma década de experiência em Tantra, NeoTantra e terapias vibracionais. Fundador da Kandah Tantra Brasil, Arjun também é instrutor de Yoga, facilitador de meditações e autor do livro 'Os Segredos de Afrodite', especializado na sexualidade feminina. Ele oferece atendimentos individuais e cursos, como a Massagem Tântrica para Casais, trazendo uma abordagem holística para o desenvolvimento corporal e energético."
+        />
       </div>
       <div className="inset-0 flex justify-center items-center my-2 z-20">
         <Image
-          src="/snake.png" // Substitua pelo caminho correto da imagem
-          alt="Daiane Grison"
-          width={100} // Ajuste o tamanho conforme necessário
-          height={100} // Ajuste o tamanho conforme necessário
+          src="/snake.png"
+          alt="Snake"
+          width={100}
+          height={100}
           className="rounded-full border-1 border-gold"
         />
       </div>
