@@ -3,10 +3,7 @@ import Image from 'next/image';
 import Card from './Card';
 
 const About = () => {
-  const handleButtonClick = () => {
-    document.getElementById('programacao')?.scrollIntoView({ behavior: 'smooth' });
-  };
-
+  
   return (
     <section className="flex flex-col items-center justify-center py-16 bg-tantra-dark text-tantra-light" id="saiba-mais">
       <div className="flex flex-col md:flex-row lg:flex-row gap-8">
@@ -15,8 +12,6 @@ const About = () => {
           name="Daiane Grison"
           description="Terapeuta há 6 anos, Daiane Grison é especialista em Tantra, Constelação Familiar, Reiki e Reprogramação Emocional. Mãe de três meninos, atua em diversas cidades e estados do Brasil, oferecendo terapias e mentorias em cursos livres. Ela é sócia proprietária do Espaço Única em Balneário Camboriú, e seu propósito é despertar o poder transformador do Tantra em cada pessoa, promovendo uma reconexão profunda entre corpo, mente e espírito.
 "
-          buttonText="Ver programação"
-          onButtonClick={handleButtonClick}
         />
         <Card
           imageSrc="/arjun.png" // Substitua pelo caminho correto da imagem

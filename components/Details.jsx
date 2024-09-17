@@ -1,11 +1,11 @@
-import { FaSun, FaMoon, FaLeaf, FaHeart, FaHandSparkles, FaUtensils } from 'react-icons/fa'; // Importa ícones
+import { FaSun, FaMoon, FaLeaf, FaUtensils } from 'react-icons/fa'; // Importa ícones
 
 export default function Schedule() {
   return (
     <section className="py-16 bg-tantra-dark" id="schedule">
       <div className="max-w-3xl mx-auto px-4">
         {/* Título */}
-        <h4 className="text-xl md:text-3xl font-bold text-center text-tantra-light mb-8">
+        <h4 className="moving-gradient text-xl md:text-3xl font-bold text-center text-tantra-light mb-8 bg-dourado rounded-xl p-5 text-shadow">
           Cronograma da Experiência
         </h4>
 
@@ -76,6 +76,13 @@ export default function Schedule() {
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Botão */}
+        <div className="flex justify-center mt-12">
+          <a href="https://example.com" className="pulse-button text-shadow" target="_blank" rel="noopener noreferrer">
+            Transforme sua vida, reserve seu lugar
+          </a>
         </div>
       </div>
     </section>

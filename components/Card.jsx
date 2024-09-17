@@ -13,7 +13,7 @@ const Card = ({ imageSrc, name, description }) => {
           className="relative rounded-full border-4 border-gold"
         />
       </div>
-      <h2 className="text-2xl text-slate-600 font-bold mb-4 md:text-3xl lg:text-3xl">{name}</h2>
+      <h2 className="text-2xl text-pink-600 font-bold mb-4 md:text-3xl lg:text-3xl">{name}</h2>
       <p className="text-base text-slate-600 md:text-lg lg:text-lg mb-8 mx-4">
         {description}
       </p>
