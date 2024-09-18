@@ -123,7 +123,7 @@ const ExperienceDetails = () => {
                 className="w-14 h-14 md:w-48 md:h-48 mb-6"
               />
             </div>
-            <ul className="list-disc pl-5 space-y-4 text-left text-sm md:text-xl mb-8 font-normal">
+            <ul className="list-disc pl-5 space-y-4 text-left text-sm md:text-xl mb-8 font-normal mx-2">
               <li>Como ativar sua Energia Sexual para gerar mais Prosperidade.</li>
               <li>Trazer o Tantra para fortalecer seus Relacionamentos.</li>
               <li>Ressignificar o Prazer e o desejo em sua vida.</li>

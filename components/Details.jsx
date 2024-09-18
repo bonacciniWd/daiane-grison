@@ -99,9 +99,9 @@ export default function Schedule() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center my-8"> {/* Adicione uma div flex container */}
+        <div className="flex justify-center items-center my-8 text-shadow"> {/* Adicione uma div flex container */}
           <button
-            className="pulse-button mx-auto text-shado mt-8"
+            className="pulse-button mx-auto text-shado mt-8 text-shadow"
             onClick={() => {
               window.location.href = "https://www.sympla.com.br/evento/experiencia--tantrica/2645932"; // Substitua pelo link desejado
             }}

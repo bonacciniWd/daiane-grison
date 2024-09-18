@@ -217,22 +217,41 @@ button {
 }
 
 .pulse-button {
-  background: #D3B34B; /* Cor dourada */
+  background: linear-gradient(0deg, #CBA148, #D3B34B, #E8D881, #A77B13); /* Gradiente inicial */
+  background-size: 200% 200%; /* Isso permite a animação de transição suave */
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  border: none;
+  border: 2px solid #D3B34B; /* Borda dourada */
   font-weight: bold;
   padding: 1rem 3rem;
-  border-radius: 1rem; /* Rounded corners */
+  border-radius: 2rem;
   color: #fff; /* Texto branco */
-  font-size: 1rem; /* Tamanho do texto */
-  animation: pulses 2s infinite; /* Animação de pulsação */
+  font-size: 1rem;
+  animation: pulses 2s infinite;
+  transition: background-position 0.5s ease-in-out, border-color 0.3s ease-in-out;
+  background-position: 0% 50%;
 }
 
 .pulse-button:hover {
-  background: #20201d87; /* Cor de fundo mais escura ao passar o mouse */
+  background-position: 100% 50%; /* Inverte o gradiente ao passar o mouse */
+  background: linear-gradient(-270deg, #A77B13, #E8D881, #D3B34B, #CBA148); /* Gradiente invertido */
+  border-color: #A77B13; /* Muda a cor da borda no hover */
+  color: #fff;
 }
+
+@keyframes pulses {
+  0% {
+    box-shadow: 0 0 0 0 rgba(201, 220, 32, 0.889);
+  }
+  70% {
+    box-shadow: 0 0 0 22px rgba(201, 220, 32, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(2201, 220, 32, 0);
+  }
+}
+
 
 @keyframes ping {
   75%, 100% {
