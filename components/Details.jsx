@@ -1,3 +1,4 @@
+"use client"
 import { FaSun, FaMoon, FaLeaf, FaUtensils, } from 'react-icons/fa'; // Importa ícones
 import { FaLocationPin } from 'react-icons/fa6';
 
@@ -96,10 +97,19 @@ export default function Schedule() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-
-
           </div>
         </div>
+        <div className="flex justify-center items-center my-8"> {/* Adicione uma div flex container */}
+          <button
+            className="pulse-button mx-auto text-shado mt-8"
+            onClick={() => {
+              window.location.href = "https://www.sympla.com.br/evento/experiencia--tantrica/2645932"; // Substitua pelo link desejado
+            }}
+          >
+            Garanta sua vaga
+          </button>
+        </div>
+
       </div>
     </section>
   );
