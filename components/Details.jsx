@@ -1,25 +1,27 @@
-import { FaSun, FaMoon, FaLeaf, FaUtensils } from 'react-icons/fa'; // Importa ícones
+import { FaSun, FaMoon, FaLeaf, FaUtensils, } from 'react-icons/fa'; // Importa ícones
+import { FaLocationPin } from 'react-icons/fa6';
+import Image from 'next/image';
 
 export default function Schedule() {
   return (
     <section className="py-16 bg-tantra-dark" id="schedule">
       <div className="max-w-3xl mx-auto px-4">
         {/* Título */}
-        <h4 className="moving-gradient text-xl md:text-3xl font-bold text-center text-tantra-light mb-8 bg-dourado rounded-xl p-5 text-shadow">
+        <h4 className="text-xl md:text-3xl bg-gray-950 border-2 border-dourado font-bold text-center text-tantra-light mb-8 bg- bg-opacity-40 rounded-xl p-5 text-shadow">
           Cronograma da Experiência
         </h4>
 
         {/* Roteiro do Dia */}
-        <div className="space-y-12">
+        <div className="space-y-14 bg-gray-950 bg-opacity-40 p-5 rounded-2xl border-dourado border-2">
           {/* Manhã */}
           <div className="relative">
             <div className="flex items-center">
-              <FaSun className="text-tantra-light text-2xl mr-4" />
+              <FaSun className="text-orange-500 text-2xl mr-4 mt-5" />
               <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
                 Manhã (Início às 9:30)
               </h5>
             </div>
-            <div className="ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
+            <div className="mx-12 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
               <p className="text-tantra-light">
                 <strong>Movimento de Constelação Familiar</strong> – com Tatiana Vanusa, líder de movimento feminino. Liberando bloqueios emocionais e energéticos.
               </p>
@@ -32,12 +34,12 @@ export default function Schedule() {
           {/* Almoço */}
           <div className="relative">
             <div className="flex items-center">
-              <FaUtensils className="text-tantra-light text-2xl mr-4" />
+              <FaUtensils className="text-gray-400 text-2xl mr-4" />
               <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
                 Almoço (12:00)
               </h5>
             </div>
-            <div className="ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
+            <div className="mx-12 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
               <p className="text-tantra-light">
                 <strong>Almoço Natural e Saboroso</strong> – comidas leves e preparadas especialmente para a vivência, garantindo nutrição e bem-estar.
               </p>
@@ -47,12 +49,12 @@ export default function Schedule() {
           {/* Tarde */}
           <div className="relative">
             <div className="flex items-center">
-              <FaLeaf className="text-tantra-light text-2xl mr-4" />
+              <FaLeaf className="text-green-400 text-2xl mr-4" />
               <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
                 Tarde
               </h5>
             </div>
-            <div className="ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
+            <div className="mx-12 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
               <p className="text-tantra-light">
                 <strong>Vivências de Reconexão com a Essência</strong> – guiadas por Daiane Grison e Arjun, trazendo você de volta à sua essência.
               </p>
@@ -65,24 +67,38 @@ export default function Schedule() {
           {/* Encerramento */}
           <div className="relative">
             <div className="flex items-center">
-              <FaMoon className="text-tantra-light text-2xl mr-4" />
+              <FaMoon className="text-yellow-300 text-2xl mr-4" />
               <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
                 Encerramento (Fim do dia)
               </h5>
             </div>
-            <div className="ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
+            <div className="mx-12 mt-4 border-l-2 border-tantra-light pl-6 space-y-4">
               <p className="text-tantra-light">
                 <strong>Demonstração de Massagem Shiva e Shakti</strong> – com Daiane e Arjun, uma apresentação das técnicas de massagem tântrica para equilibrar as energias.
               </p>
             </div>
           </div>
-        </div>
+          <div className="relative">
+            <div className="flex items-center">
+              <FaLocationPin className="text-red-600 text-2xl mr-4" />
+              <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
+               Localização
+              </h5>
+            </div>
+            <div className="mb-8 ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4 w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.8295970423005!2d-48.62847242455742!3d-27.003939676592967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94d8b7224ff4128d%3A0x96588330a37ad0a3!2sJardim%20Cristalino!5e0!3m2!1spt-BR!2sbr!4v1726614342833!5m2!1spt-BR!2sbr"
+                width="85%"
+                height="400"  // Altura ajustável
+                style={{ border: "0" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
 
-        {/* Botão */}
-        <div className="flex justify-center mt-12">
-          <a href="https://example.com" className="pulse-button text-shadow" target="_blank" rel="noopener noreferrer">
-            Transforme sua vida, reserve seu lugar
-          </a>
+
+          </div>
         </div>
       </div>
     </section>

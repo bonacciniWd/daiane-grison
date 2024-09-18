@@ -19,9 +19,8 @@ export default function Footer() {
 
         <p>Siga nas redes sociais</p>
         <div className="mt-2 space-x-4">
-          <a href="https://facebook.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://chat.whatsapp.com/KS5FcGgF7pOLkZLLP9obio" className="hover:underline" target="_blank" rel="noopener noreferrer">Grupo do Whatsapp</a>
           <a href="https://instagram.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://youtube.com" className="hover:underline" target="_blank" rel="noopener noreferrer">YouTube</a>
         </div>
       </div>
 

@@ -256,3 +256,8 @@ button {
 .animate-bounce {
   animation: bounce 1s infinite;
 }
+
+.image-wrapper {
+  border-radius: 20px;
+  pointer-events: none;
+}

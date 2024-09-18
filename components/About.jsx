@@ -10,7 +10,7 @@ const About = () => {
         <Card
           imageSrc="/daiane-grison.png"
           name="Daiane Grison"
-          description="Terapeuta há 6 anos, Daiane Grison é especialista em Tantra, Constelação Familiar, Reiki e Reprogramação Emocional. Mãe de três meninos, atua em diversas cidades e estados do Brasil, oferecendo terapias e mentorias em cursos livres. Ela é sócia proprietária do Espaço Única em Balneário Camboriú, e seu propósito é despertar o poder transformador do Tantra em cada pessoa, promovendo uma reconexão profunda entre corpo, mente e espírito.
+          description="Terapeuta há 6 anos, é especialista em Tantra, Constelação Familiar, Reiki e Reprogramação Emocional. Mãe de três meninos, atua em diversas cidades e estados do Brasil, oferecendo terapias e mentorias em cursos livres. Ela é sócia proprietária do Espaço Única em Balneário Camboriú, e seu propósito é despertar o poder transformador do Tantra em cada pessoa, promovendo uma reconexão profunda entre corpo, mente e espírito.
 "
         />
         <Card

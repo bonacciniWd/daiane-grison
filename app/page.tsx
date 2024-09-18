@@ -7,6 +7,11 @@ import Spacebar from '../components/Spacebar';
 import Element from '../components/Element';
 import WhatsappButton from '../components/WhatsappButton';
 import Footer from '@/components/Footer';
+import ExperienceDetails from '@/components/ExperienceDetails';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 
 export default function Home() {
@@ -14,9 +19,10 @@ export default function Home() {
     <div className="min-h-screen bg-tantra-dark overflow-x-hidden">
       <Headline />
       <Spacebar />
-      <Element />
-      <Spacebar />
+      <ExperienceDetails />
       <About />
+      <Spacebar />
+      <Element />
       <Spacebar />
       <Details />
       <Spacebar />

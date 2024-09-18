@@ -48,7 +48,7 @@ const FAQAccordion = () => {
           <div key={index} className="mb-4 border-b border-gray-300">
             <button
               onClick={() => toggleFAQ(index)}
-              className="w-full text-left py-4 px-4 rounded font-medium text-md md:text-xl bg-tantra text-tantra-light flex justify-between items-center"
+              className="w-full text-left py-4 px-4 rounded font-medium text-md md:text-xl bg-tantra bg-opacity-65 text-tantra-light flex justify-between items-center"
             >
               {faq.question}
               <span className="ml-2">
