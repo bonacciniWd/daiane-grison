@@ -80,7 +80,7 @@ export default function Testimonials() {
 
             {/* Depoimento */}
             <p className="text-gray-700 mb-4 italic leading-relaxed mx-4 md:mx-8 lg:mx-8">
-              "{testimonial.text}"
+              {testimonial.text}
             </p>
             <p className="font-semibold text-gray-900">- {testimonial.name}</p>
           </div>
