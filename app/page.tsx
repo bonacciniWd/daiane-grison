@@ -29,6 +29,7 @@ export default function Home() {
       <Headline />
       <Spacebar />
       <ExperienceDetails />
+      <Spacebar />
       <About />
       <Spacebar />
       <Element />

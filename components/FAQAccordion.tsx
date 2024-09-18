@@ -5,8 +5,8 @@ import { useState } from 'react';
 const FAQAccordion = () => {
   const faqs = [
     {
-      question: 'O que é terapia Tântrica?',
-      answer: 'É importante deixar claro o que a terapia tântrica não é sexo. Se você comparecer a uma sessão de terapia tântrica com essas expectativas, a frustração é certa. Da mesma forma, se receber esse tipo de abordagem da pessoa que o atender, saiba que você não esteve diante de um profissional sério.'
+      question: 'O que é Terapia Tantrica?',
+      answer: 'É importante deixar claro que a terapia tântrica não é sexo. Se você comparecer a uma sessão com essas expectativas, a frustração é certa. Da mesma forma, se receber esse tipo de abordagem da pessoa que o atender, saiba que você não esteve diante de um profissional sério.'
 
     },
     {
