@@ -23,7 +23,7 @@ export default function Home() {
         <meta name="keywords" content="experiência tântrica, tantra, meditação, crescimento pessoal, sexualidade, ejaculação precoce, orgasmo, despertar sexual," />
         <meta property="og:title" content="Experiência Tantrica" />
         <meta property="og:description" content="A melhor experiência tantrica para seu crescimento pessoal e espiritual" />
-        <meta property="og:image" content="/eye.jpeg" />
+        <meta property="og:image" content="https://i.ibb.co/2nwWRsJ/Capa-Icone-Landing-Page.png" />
         <meta property="og:url" content="https://daiane-grison.vercel.app" />
       </Head>
       <Headline />
