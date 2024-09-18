@@ -41,7 +41,7 @@ export default function Element() {
             </p>
           </div>
           <button
-        className=" text-dourado text-shadow-2 bottom-2 t font-semibold text-opacity-95  hover:text-white transition-colors duration-300"
+        className=" text-dourado text-shadow-2 bottom-2 t font-semibold text-opacity-95  hover:text- transition-colors duration-300"
         onClick={() => {
           // Rola suavemente até a seção com id "saiba-mais"
           document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' });
