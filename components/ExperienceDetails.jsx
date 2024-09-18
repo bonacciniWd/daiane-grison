@@ -1,8 +1,6 @@
 "use client";
 import Slider from "react-slick";
 import Image from 'next/image';
-import { FaHeart, FaHandSparkles } from "react-icons/fa";
-import { BsFire } from "react-icons/bs";
 
 const ExperienceDetails = () => {
   // Configurações do carrossel
