@@ -34,7 +34,7 @@ export default function Element() {
 
       {/* Textos abaixo das imagens */}
       <div
-        className="mt-8 text-slate-800 z-10 py-5 px-5 rounded-lg border-4 border-red-500 relative mx-auto"
+        className="mt-8 text-slate-800 z-10 py-5 px-5 rounded-xl border-tantra border-4 relative mx-auto"
         style={{
           backgroundImage: 'url("/texture.png")',
           backgroundSize: 'cover',

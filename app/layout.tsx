@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://daiane-grison.vercel.app",
     images: [
       {
-        url: "https://i.ibb.co/2nwWRsJ/Capa-Icone-Landing-Page.png", // Adicione o caminho da imagem de SEO
+        url: "https://i.ibb.co/CQwngXc/Capa-Icone-Landing-Page.png", // Adicione o caminho da imagem de SEO
         width: 1200,
         height: 630,
         alt: "Despertar interior",
@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     ],
   },
 
+
+  
 };
 
 export default function RootLayout({
