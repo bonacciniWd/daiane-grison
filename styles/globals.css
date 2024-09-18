@@ -141,7 +141,7 @@ button {
     transform: scale(1);
   }
   50% {
-    opacity: 0.50;
+    opacity: 0.80;
     transform: scale(1.10); /* Ajuste o valor conforme a intensidade do efeito desejado */
   }
 }

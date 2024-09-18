@@ -45,7 +45,7 @@ export default function Headline() {
         className="text-slate-300 mt-10 t font-semibold underline hover:text-white transition-colors duration-300"
         onClick={() => {
           // Rola suavemente até a seção com id "saiba-mais"
-          document.getElementById('element')?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('1')?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
        <FaSortDown className="flex animate-bounce text-white size-8 mt-20"/>

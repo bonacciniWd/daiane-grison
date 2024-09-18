@@ -4,14 +4,9 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="py-8 bg-tantra-dark text-center text-tantra-light">
-      <div className="space-x-4 text-sm mx-4">
-        <Link href="/terms" className="hover:underline">Termos de Uso</Link>
-        <Link href="/privacy" className="hover:underline">Política de Privacidade</Link>
-        <Link href="/faq" className="hover:underline">Perguntas Frequentes</Link>
-      </div>
 
       <div className="mt-4 text-sm">
-        <p>Contato: <a href="mailto:contato@daianegrison.com" className="underline">contato@daianegrison.com</a></p>
+        
         <div className="mt-4">
         <Image src="/logo.png" alt="Logo Daiane Grison" className="mx-auto " width={140} 
           height={140}/>
@@ -20,11 +15,15 @@ export default function Footer() {
         <p>Siga nas redes sociais</p>
         <div className="mt-2 space-x-4">
           <a href="https://chat.whatsapp.com/KS5FcGgF7pOLkZLLP9obio" className="hover:underline" target="_blank" rel="noopener noreferrer">Grupo do Whatsapp</a>
-          <a href="https://instagram.com" className="hover:underline" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.instagram.com/daianegrison/" className="hover:underline" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
 
-     
+      <div className="space-x-4 text-sm mx-4 my-4">
+        <Link href="/terms" className="hover:underline">Termos de Uso</Link>
+        <Link href="/privacy" className="hover:underline">Política de Privacidade</Link>
+        <Link href="/faq" className="hover:underline">Perguntas Frequentes</Link>
+      </div>
 
       {/* Powered by VRZ-Studio */}
       <div className="mt-4">

@@ -10,8 +10,8 @@ const FAQAccordion = () => {
 
     },
     {
-      question: 'O que é o Tantra Magnético?',
-      answer: 'O Tantra Magnético é uma prática de autoconhecimento que desperta sua essência e potencializa seu poder interior.',
+      question: 'O que é o Tantra?',
+      answer: 'O Tantra é uma prática de autoconhecimento que desperta sua essência e potencializa seu poder interior.',
     },
     {
       question: 'Como o Tantra pode ajudar no meu dia a dia?',
@@ -19,7 +19,7 @@ const FAQAccordion = () => {
     },
     {
       question: 'É necessário ter experiência anterior?',
-      answer: 'Não, o Tantra Magnético é acessível a todos, independentemente de experiência anterior.',
+      answer: 'Não, o Tantra é acessível a todos, independentemente de experiência anterior.',
     },
     {
       question: 'Tenho alguma garantia?',

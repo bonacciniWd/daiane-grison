@@ -26,16 +26,16 @@ export default function Element() {
       </div>
 
       {/* Textos abaixo das imagens */}
-      <div className="mt-8 text-tantra-light z-10">
+      <div className="mt-8 text-tantra-light z-10 py-5 px-5 bg-black bg-opacity-40 rounded-lg border-2 border-dourado">
       <p className="my-4 mx-8 text-base md:text-3xl md:mx-60 font-extralight">
         A energia sexual é a força mais poderosa que você possui.
         Aprenda a utilizá-la para viver com mais prazer, prosperidade e reconexão com seu feminino. <br />
-        Junte-se a <span className="text-pink-500 font-bold">Daiane Grison</span> e <span className="text-pink-500 font-bold">Arjun Das</span> para uma Experiência Tântrica Única que vai transformar seu olhar sobre a vida.
+        
       </p>
 
       </div>
       <button
-        className="text-slate-300 mt-10 t font-semibold underline hover:text-white transition-colors duration-300"
+        className="text-slate-300 mt-10 t font-semibold text-opacity-75  hover:text-white transition-colors duration-300"
         onClick={() => {
           // Rola suavemente até a seção com id "saiba-mais"
           document.getElementById('saiba-mais')?.scrollIntoView({ behavior: 'smooth' });
