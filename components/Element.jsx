@@ -27,7 +27,7 @@ export default function Element() {
 
       {/* Textos abaixo das imagens */}
       <div
-          className="mt-8 text-slate-700 z-10 py-5 px-5 rounded-lg border-2 border-dourado relative mx-auto"
+          className="mt-8 text-slate-800 z-10 py-5 px-5 rounded-lg border-2 border-dourado relative mx-auto"
           style={{
             backgroundImage: 'url("/texture.png")',
             backgroundSize: 'cover',
@@ -35,25 +35,21 @@ export default function Element() {
           }}
         >
           <div className="relative z-10 max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
-            <p className="my-4 mx-8 text-base md:text-2xl md:mx-10 font-extralight">
+            <p className="my-4 mx-8 text-base md:text-2xl md:mx-10 font-light">
               A energia sexual é a força mais poderosa que você possui.
               Aprenda a utilizá-la para viver com mais prazer, prosperidade e reconexão com seu feminino. <br />
             </p>
           </div>
-        </div>
-
-
-      <button
-        className="text-slate-300 mt-10 t font-semibold text-opacity-75  hover:text-white transition-colors duration-300"
+          <button
+        className=" text-dourado text-shadow-2 bottom-2 t font-semibold text-opacity-95  hover:text-white transition-colors duration-300"
         onClick={() => {
           // Rola suavemente até a seção com id "saiba-mais"
-          document.getElementById('saiba-mais')?.scrollIntoView({ behavior: 'smooth' });
+          document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' });
         }}
       >
-        Saiba mais...
+        saiba mais...
       </button>
-
-  
+        </div>
 
     </main>
   );

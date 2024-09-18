@@ -199,6 +199,10 @@ button {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra preta suave */
 }
 
+.text-shadow-2 {
+  text-shadow: 0.5px 0.5px 1px rgba(20, 20, 19, 0.77); /* Sombra preta suave */
+}
+
 /* Adiciona o efeito de pulsação ao botão */
 @keyframes pulses {
   0% {

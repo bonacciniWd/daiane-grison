@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Card = ({ imageSrc, name, description }) => {
   return (
-    <div className="text-center border-4 border-dourado-hover max-w-xl mx-4 bg-white opacity-90 p-6 rounded-lg shadow-lg mt-3 relative"
+    <div className="text-center border-4 border-dourado-hover max-w-xl mx-6 bg-white opacity-90 p-6 rounded-lg shadow-lg mt-3 relative"
      style={{
        backgroundImage: 'url("/texture.png")', // Substituir pela URL da textura
        backgroundSize: 'cover',  // A textura cobrirá todo o card
