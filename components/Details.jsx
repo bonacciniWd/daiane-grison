@@ -1,6 +1,6 @@
 import { FaSun, FaMoon, FaLeaf, FaUtensils, } from 'react-icons/fa'; // Importa ícones
 import { FaLocationPin } from 'react-icons/fa6';
-import Image from 'next/image';
+
 
 export default function Schedule() {
   return (
