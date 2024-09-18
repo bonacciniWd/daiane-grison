@@ -34,7 +34,7 @@ export default function Headline() {
 
       <div className="relative z-30">
       <p className="my-8 font-light text-white text-lg md:text-xl lg:text-xl">
-          <span className="text-3xl text-dourado font-bold bg-black py-1 px-2 rounded-md border-2 border-dourado">28/09</span>
+          <span className="text-3xl text-dourado font-bold bg-opacity-30 bg-black py-1 px-2 rounded-md border-2 border-dourado">28/09</span>
         </p>
         <h1 className="text-xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3 uppercase">
           Experiência Tântrica
