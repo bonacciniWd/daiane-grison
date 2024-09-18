@@ -19,7 +19,7 @@ const About = () => {
           description="Arjun Das é terapeuta corporal e comportamental com mais de uma década de experiência em Tantra, NeoTantra e terapias vibracionais. Fundador da Kandah Tantra Brasil, Arjun também é instrutor de Yoga, facilitador de meditações e autor do livro 'Os Segredos de Afrodite', especializado na sexualidade feminina. Ele oferece atendimentos individuais e cursos, como a Massagem Tântrica para Casais, trazendo uma abordagem holística para o desenvolvimento corporal e energético."
         />
       </div>
-      <div className="inset-0 flex justify-center items-center my-2 z-20">
+      <div className="inset-0 flex justify-center items-center mt-10 z-20">
         <Image
           src="/snake.png"
           alt="Snake"
