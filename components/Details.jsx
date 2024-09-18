@@ -101,7 +101,7 @@ export default function Schedule() {
         </div>
         <div className="flex justify-center items-center my-8 text-shadow"> {/* Adicione uma div flex container */}
           <button
-            className="pulse-button mx-auto text-shado mt-8 text-shadow"
+            className="pulse-button mx-auto text-shado mt-8 text-shadow uppercase"
             onClick={() => {
               window.location.href = "https://www.sympla.com.br/evento/experiencia--tantrica/2645932"; // Substitua pelo link desejado
             }}
@@ -109,7 +109,11 @@ export default function Schedule() {
             Garanta sua vaga
           </button>
         </div>
-
+       <div className="relative max-w-lg md:max-w-xl lg:max-w-2xl mx-auto -mt-4"> 
+          <p className="items-center font- text-center text-slate-300 font opacity-70 uppercase text-xs  md:text-sm lg:text-sm">
+              Vagas limitadas<span className="text-red-600 font-bold text-base">*</span>
+          </p>
+       </div> 
       </div>
     </section>
   );

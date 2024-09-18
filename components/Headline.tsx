@@ -32,15 +32,20 @@ export default function Headline() {
       </div>
       
 
-      {/* Texto abaixo das imagens */}
-      <div className="relative z-30 mt-8">
+      <div className="relative z-30">
+      <p className="my-8 font-light text-white text-lg md:text-xl lg:text-xl">
+          <span className="text-3xl text-dourado font-bold bg-black py-1 px-2 rounded-md border-2 border-dourado">28/09</span>
+        </p>
         <h1 className="text-xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3 uppercase">
-        Experiência Tântrica
+          Experiência Tântrica
         </h1>
+        {/* Adicionar o texto "No dia, 28/09" */}
+        
         <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-6">
-        Desperte Seu Prazer, Conecte-se com sua Essência e Viva Plenamente
+          Desperte Seu Prazer, Conecte-se com sua Essência e Viva Plenamente
         </h2>
       </div>
+
       <button
         className="text-slate-300 mt-10 t font-semibold underline hover:text-white transition-colors duration-300"
         onClick={() => {
