@@ -82,7 +82,7 @@ export default function Schedule() {
             <div className="flex items-center">
               <FaLocationPin className="text-red-600 text-2xl mr-4" />
               <h5 className="text-lg md:text-2xl font-bold text-tantra-light">
-               Localização
+               Localização (Jardim Secreto)
               </h5>
             </div>
             <div className="mb-8 ml-10 mt-4 border-l-2 border-tantra-light pl-6 space-y-4 w-full">

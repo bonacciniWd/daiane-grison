@@ -49,7 +49,7 @@ const ExperienceDetails = () => {
       Um dia dedicado à reconexão
     </h4>
     <p className="text-sm md:text-base text-tantra-light mx-6">
-      Um dia dedicado à reconexão com seu corpo, mente e espírito, guiado por especialistas no Tantra.
+    Corpo, Mente e Espírito são guiados em uma experiência ÚNICA, por especialistas no Tantra.
     </p>
   </div>
 
@@ -108,26 +108,36 @@ const ExperienceDetails = () => {
         <h4 className="text-xl md:text-2xl font-bold text-tantra-light underline">
           Você vai vivenciar
         </h4>
-        <div className="py-5 px-5 rounded-lg bg-slate-950 bg-opacity-20 border-2 border-dourado mx-2">
-          <ul className="list-disc pl-5 space-y-4 text-left text-tantra-light text-lg md:text-xl">
-            <li>
-              Como ativar sua Energia Sexual para gerar mais Prosperidade.
-            </li>
-            <li>
-              Trazer o Tantra para fortalecer seus Relacionamentos.
-            </li>
-            <li>
-              Ressignificar o Prazer e o desejo em sua vida.
-            </li>
-          </ul>
-        </div>
-      </div>
+        <div
+            className="mt-auto text-slate-800 z-10 py-5 rounded-md px-5 relative mx-auto border-2 border-dourado"
+            style={{
+              backgroundImage: 'url("/texture.png")',
+              backgroundSize: 'cover',
+              backgroundBlendMode: 'multiply',
+            }}
+          >
+            <div className="mt-4 flex justify-center">
+              <img
+                src="https://user-images.githubusercontent.com/74038190/216122041-518ac897-8d92-4c6b-9b3f-ca01dcaf38ee.png"
+                alt="Fogo"
+                className="w-14 h-14 md:w-48 md:h-48 mb-6"
+              />
+            </div>
+            <ul className="list-disc pl-5 space-y-4 text-left text-sm md:text-xl">
+              <li>Como ativar sua Energia Sexual para gerar mais Prosperidade.</li>
+              <li>Trazer o Tantra para fortalecer seus Relacionamentos.</li>
+              <li>Ressignificar o Prazer e o desejo em sua vida.</li>
+            </ul>
+          </div>
 
-      <div className="text-sm text-tantra-light mx-6">
+        <div className="text-sm text-tantra-light mx-6 my-4">
         <p>
-          Trazemos uma nova visão do Tantra, às unindo práticas ancestrais a uma abordagem moderna.
+        Unindo práticas ancestrais a uma abordagem moderna, para que você integre essa energia no seu cotidiano.
         </p>
       </div>
+      </div>
+
+      
     </section>
   );
 };
