@@ -6,12 +6,29 @@ const FAQAccordion = () => {
   const faqs = [
     {
       question: 'O que é Terapia Tantrica?',
-      answer: 'É importante deixar claro que a terapia tântrica não é sexo. Se você comparecer a uma sessão com essas expectativas, a frustração é certa. Da mesma forma, se receber esse tipo de abordagem da pessoa que o atender, saiba que você não esteve diante de um profissional sério.'
-
+      answer: (
+        <>
+          <p>
+            A terapia tântrica é um conjunto de práticas e massagens que se unem para ajudar o interagente a atingir um objetivo específico — seja ele o autoconhecimento corporal, energético ou mental.
+          </p>
+          <p>
+          O cuidado se reflete nos pequenos rituais diários, nas escolhas que fazemos para nutrir nossa mente, alma e corpo. Tantra nos ensina a amar a nós mesmos e a contemplar o belo que já existe dentro de nós.
+          </p>
+        </>
+      )
     },
     {
       question: 'O que é o Tantra?',
-      answer: 'O Tantra é uma prática de autoconhecimento que desperta sua essência e potencializa seu poder interior.',
+      answer: (
+        <>
+          <p>
+          Tantra é muito mais do que uma prática— é uma filosofia de vida que envolve meditações, rituais e uma profunda consciência sobre si mesmo. É um caminho de disciplina e cuidado, seja com o corpo, com o que ingerimos, ou com quem permitimos que acesse nossa energia.
+          </p>
+          <p>
+            Além de promover uma conexão mais profunda consigo mesmo, essa terapia também alivia as tensões físicas e mentais, ajudando no relaxamento completo.
+          </p>
+        </>
+      )
     },
     {
       question: 'Como o Tantra pode ajudar no meu dia a dia?',
@@ -19,7 +36,19 @@ const FAQAccordion = () => {
     },
     {
       question: 'É necessário ter experiência anterior?',
-      answer: 'Não, o Tantra é acessível a todos, independentemente de experiência anterior.',
+      answer: (
+        <>
+          <p className="font-bold mb-2">
+          Não, o Tantra é acessível a todos, independentemente de experiência anterior.
+          </p>
+          <p>
+          Trabalhamos com qualquer tipo de bloqueio ou desafio que a pessoa esteja enfrentando, reconhecendo que cada ser humano é único.
+          </p>
+          <p>
+          Por isso, antes de cada sessão, terapeuta e interagente conversam para definir quais ferramentas serão mais adequadas naquele momento, tornando cada encontro uma experiência exclusiva e personalizada.
+          </p>
+        </>
+      )
     },
     {
       question: 'Tenho alguma garantia?',
@@ -68,7 +97,7 @@ const FAQAccordion = () => {
                   backgroundBlendMode: 'multiply',
                 }}
               >
-              <p className="px-4 py-2 text-md md:text-lg text-slate-800 ">{faq.answer}</p>
+              <p className="px-4 py-2 text-md md:text-lg text-slate-800">{faq.answer}</p>
              </div> 
             </div>
           </div>
