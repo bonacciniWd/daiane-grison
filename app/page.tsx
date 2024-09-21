@@ -1,6 +1,5 @@
 "use client"
-import { useState, useEffect } from 'react';
-
+import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
 import Headline from '../components/Headline';
 import About from '../components/About';
@@ -19,6 +18,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const videoRef = useRef(null); // Ref para o vídeo
 
   // Usamos um efeito para verificar quando todos os recursos da página foram carregados
   useEffect(() => {
@@ -37,8 +37,17 @@ export default function Home() {
     return () => window.removeEventListener('load', handlePageLoad);
   }, []);
 
+  useEffect(() => {
+    // Quando o loader desaparece, tentamos tocar o vídeo manualmente
+    if (!isLoading && videoRef.current) {
+      videoRef.current.play().catch((error) => {
+        console.error("Erro ao tentar reproduzir o vídeo automaticamente:", error);
+      });
+    }
+  }, [isLoading]);
+
   return (
-    <div className="min-h-screen bg-tantra-dark overflow-x-hidden">
+    <div className="min-h-screen bg-tantra-dark overflow-hidden">
       <Head>
         <title>Home | Experiência Tantrica</title>
         <meta name="description" content="A melhor experiência tantrica para seu crescimento pessoal e espiritual" />
@@ -54,7 +63,7 @@ export default function Home() {
         <Loader />
       ) : (
         <>
-          <Headline />
+          <Headline videoRef={videoRef} /> {/* Passa a ref do vídeo */}
           <Spacebar />
           <ExperienceDetails />
           <Spacebar />
