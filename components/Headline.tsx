@@ -1,8 +1,11 @@
-"use client"
 import Image from "next/image";
 import { FaSortDown } from 'react-icons/fa';
 
-export default function Headline({ videoRef }) {
+interface HeadlineProps {
+  videoRef: React.RefObject<HTMLVideoElement>; // Define o tipo explicitamente
+}
+
+export default function Headline({ videoRef }: HeadlineProps) {
   
   return (
     <main className="relative flex flex-col items-center justify-center h-screen text-center px-4 md:px-8 lg:px-16">
@@ -45,7 +48,7 @@ export default function Headline({ videoRef }) {
       </div>
 
       <button
-        className="text-slate-300 mt-10 t font-semibold underline hover:text-white transition-colors duration-300"
+        className="text-slate-300 mt-10 font-semibold underline hover:text-white transition-colors duration-300"
         onClick={() => {
           document.getElementById('1')?.scrollIntoView({ behavior: 'smooth' });
         }}
