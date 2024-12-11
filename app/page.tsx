@@ -1,11 +1,10 @@
 "use client";
 import { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
+import Header from "../components/Header";
 import Headline from '../components/Headline';
 import About from '../components/About';
 import FAQAccordion from '../components/FAQAccordion';
-import Details from '../components/Details';
-import Testimonials from '../components/Testimonials';
 import Spacebar from '../components/Spacebar';
 import Element from '../components/Element';
 import WhatsappButton from '../components/WhatsappButton';
@@ -61,8 +60,8 @@ export default function Home() {
         <Loader />
       ) : (
         <>
-          {/* Passa o videoRef para o componente Headline */}
-          <Headline videoRef={videoRef} />
+          <Header />
+          <Headline  />
           <Spacebar />
           <ExperienceDetails />
           <Spacebar />
@@ -70,9 +69,6 @@ export default function Home() {
           <Spacebar />
           <Element />
           <Spacebar />
-          <Details />
-          <Spacebar />
-          <Testimonials />
           <Spacebar />
           <FAQAccordion />
           <Spacebar />

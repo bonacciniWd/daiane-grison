@@ -1,32 +1,42 @@
-"use client";
-import Image from 'next/image';
-import Card from './Card';
+import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
-  
   return (
-    <section className="flex flex-col items-center justify-center py-16 bg-tantra-dark text-tantra-light" id="saiba-mais">
-      <div className="flex flex-col md:flex-row lg:flex-row gap-8">
-        <Card
-          imageSrc="/daiane-grison.png"
-          name="Daiane Grison"
-          description="Terapeuta há 6 anos, é especialista em Tantra, Constelação Familiar, Reiki e Reprogramação Emocional. Mãe de três meninos, atua em diversas cidades e estados do Brasil, oferecendo terapias e mentorias em cursos livres. Ela é sócia proprietária do Espaço Única em Balneário Camboriú, e seu propósito é despertar o poder transformador do Tantra em cada pessoa, promovendo uma reconexão profunda entre corpo, mente e espírito.
-"
-        />
-        <Card
-          imageSrc="/arjun.png" // Substitua pelo caminho correto da imagem
-          name="Arjun Das"
-          description="Arjun Das é terapeuta corporal e comportamental com mais de uma década de experiência em Tantra, NeoTantra e terapias vibracionais. Fundador da Kandah Tantra Brasil, Arjun também é instrutor de Yoga, facilitador de meditações e autor do livro 'Os Segredos de Afrodite', especializado na sexualidade feminina. Ele oferece atendimentos individuais e cursos, como a Massagem Tântrica para Casais, trazendo uma abordagem holística para o desenvolvimento corporal e energético."
-        />
-      </div>
-      <div className="inset-0 flex justify-center items-center mt-10 z-20">
-        <Image
-          src="/snake.png"
-          alt="Snake"
-          width={100}
-          height={100}
-          className="rounded-full border-1 border-gold"
-        />
+    <section id="about" className="w-full py-12 px-6 bg-cover bg-center">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Título com animação de fade-in e estilo do Headline */}
+        <motion.h2
+          className="text-2xl sm:text-4xl font-black text-transparent bg-clip-text animate-gradient bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          A mudança começa com você
+        </motion.h2>
+
+        {/* Texto principal com animação de fade-in */}
+        <motion.p
+          className="text-lg text-white leading-relaxed mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
+          A partir da mudança da sua relação com o prazer e o orgasmo, tudo muda. Surge um EU com muito mais
+          alegria, autoestima, criatividade, espontaneidade e coragem de ser quem você realmente é.
+        </motion.p>
+
+        {/* Segundo parágrafo com animação */}
+        <motion.p
+          className="text-lg text-white leading-relaxed mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+        >
+          Experimente um final de semana intenso com experiências transformadoras que combinam expansão energética,
+          sensibilidade, desenvolvimento corporal e orgástico, e consciência corporal.
+        </motion.p>
+
       </div>
     </section>
   );

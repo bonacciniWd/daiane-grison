@@ -1,62 +1,101 @@
-"use client";
-import Image from "next/image";
+import React from 'react';
+import { FaInstagram, FaWhatsapp, FaMapMarkerAlt } from 'react-icons/fa';
+import { motion } from 'framer-motion';
+import CourseInfoCards from '@/components/CourseInfoCards';
 
-export default function Element() {
+const Element = () => {
   return (
-    <main
-      id="element"
-      className="relative flex flex-col items-center justify-center h-screen text-center px-4 md:px-8 lg:px-16"
-      style={{
-        backgroundImage: 'url("/fundo.jpeg")', // Caminho da imagem de fundo
-        backgroundSize: 'cover',  // Ajusta a imagem para cobrir o elemento
-        backgroundPosition: 'center',  // Centraliza a imagem
-        backgroundRepeat: 'no-repeat', // Evita a repetição da imagem
-      }}
-    >
-      <div className="relative flex items-center justify-center z-10">
-        {/* Imagem de fundo */}
-        <Image
-          src="/react-atoma.png"
-          alt="React Atom"
-          className="animate-slow-spin"
-          width={333}
-          height={333}
-        />
-        {/* Imagem sobreposta */}
-        <Image
-          src="/chakras.png"
-          alt="Chakras"
-          className="absolute animate-pulse -mt-6"
-          width={180}
-          height={180}
-        />
-      </div>
-
-      {/* Textos abaixo das imagens */}
-      <div
-        className="mt-8 text-slate-800 z-10 py-5 px-5 rounded-xl border-tantra border-4 relative mx-auto"
-        style={{
-          backgroundImage: 'url("/texture.png")',
-          backgroundSize: 'cover',
-          backgroundBlendMode: 'multiply',
-        }}
-      >
-        <div className="relative z-10 max-w-lg md:max-w-xl lg:max-w-2xl mx-auto">
-          <p className="my-4 mx-8 text-base md:text-2xl md:mx-10 font-light">
-            A energia sexual é a força mais poderosa que você possui.
-            Aprenda a utilizá-la para viver com mais prazer, prosperidade e reconexão com seu feminino. <br />
-          </p>
-        </div>
-        <button
-          className="text-red-700 bottom-2 font-semibold text-opacity-95 hover:text-transition-colors duration-300"
-          onClick={() => {
-            // Rola suavemente até a seção com id "schedule"
-            document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' });
-          }}
+    <section className="w-full py-12 px-6">
+      <div className="max-w-4xl mx-auto text-center">
+        {/* Título com animação */}
+        <motion.h2
+          className="text-2xl sm:text-4xl font-black text-transparent bg-clip-text animate-gradient bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-8 mt-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
         >
-          saiba mais...
-        </button>
+          Permita-se viver essa experiência
+        </motion.h2>
+
+        <CourseInfoCards />
+
+        {/* Localização e WhatsApp */}
+        <motion.div
+          className="text-lg text-white mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1.5 }}
+        >
+          <p>🏠 Local: Espaço Kandah BC – Rua 2700 número 1009, Balneário Camburiu - SC</p>
+
+          {/* Link para Google Maps */}
+          <a
+            href="https://www.google.com/maps?q=Espaço+Kandah+BC,+Rua+2700,+1009,+Balneário+Camboriú+-+SC"
+            target="_blank"
+            className="text-blue-600 hover:underline flex items-center justify-center gap-2 mt-2"
+          >
+            <FaMapMarkerAlt className="text-xl" />
+            Ver no Mapa
+          </a>
+
+          <p className="mt-4">☎️ Para mais informações e inscrições, entre em contato conosco pelo WhatsApp:</p>
+          {/* Link para WhatsApp */}
+          <a
+            href="https://wa.me/5511951485071"
+            target="_blank"
+            className="text-green-600 hover:underline flex items-center justify-center gap-2 mt-2"
+          >
+            <FaWhatsapp className="text-xl" />
+            (11) 95148-5071
+          </a>
+        </motion.div>
+
+        {/* Redes Sociais */}
+        <motion.div
+          className="text-lg text-white mb-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+        >
+          <p>Siga nossas redes sociais:</p>
+          <div className="flex justify-center gap-4 mt-2 py-2">
+            {/* Links para Instagram */}
+            <a
+              href="https://www.instagram.com/arjundasterapeuta"
+              target="_blank"
+              className="text-pink-800 hover:opacity-80"
+            >
+              <FaInstagram className="text-2xl" />
+            </a>
+            <a
+              href="https://www.instagram.com/daianegrison"
+              target="_blank"
+              className="text-pink-800 hover:opacity-80"
+            >
+              <FaInstagram className="text-2xl" />
+            </a>
+            <a
+              href="https://www.instagram.com/kandahtantrabrasil"
+              target="_blank"
+              className="text-pink-800 hover:opacity-80"
+            >
+              <FaInstagram className="text-2xl" />
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Botão de inscrição */}
+        <motion.button
+          className="mt-6 px-6 py-3 text-white font-semibold bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg shadow-md hover:scale-105 transition-all duration-300"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => alert('Inscrição realizada!')}
+        >
+          Inscreva-se Agora
+        </motion.button>
       </div>
-    </main>
+    </section>
   );
-}
+};
+
+export default Element;

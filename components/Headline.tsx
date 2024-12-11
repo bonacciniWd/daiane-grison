@@ -1,60 +1,30 @@
-import Image from "next/image";
-import { FaSortDown } from 'react-icons/fa';
+import React from 'react';
+import Link from 'next/link';
 
-interface HeadlineProps {
-  videoRef: React.RefObject<HTMLVideoElement>; // Define o tipo explicitamente
-}
-
-export default function Headline({ videoRef }: HeadlineProps) {
-  
+const Headline = () => {
   return (
-    <main className="relative flex flex-col items-center justify-center h-screen text-center px-4 md:px-8 lg:px-16">
-      
-      {/* Vídeo de fundo */}
-      <video
-        ref={videoRef} // Atribui a ref ao vídeo
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-        autoPlay
-        loop
-        muted
-        playsInline
-        disablePictureInPicture
-      >
-        <source src="/videos/fundo.mp4" type="video/mp4" />
-        Seu navegador não suporta a tag de vídeo.
-      </video>
-
-      <div className="relative z-20 my-1">
-        <Image
-          src="/logo.png"
-          alt="Chakras"
-          className=" mx-auto"
-          width={310} 
-          height={310}
-        />
-      </div>
-      
-      <div className="relative z-30">
-        <p className="my-8 font-light text-white text-lg md:text-xl lg:text-xl">
-          <span className="text-3xl text-dourado font-bold bg-opacity-30 bg-black py-1 px-2 rounded-md border-2 border-dourado">28/09</span>
-        </p>
-        <h1 className="text-xl md:text-3xl lg:text-3xl font-bold text-tantra-light max-w-4xl mx-3 uppercase">
-          Experiência Tântrica
+    <section className="w-full h-screen bg-no-repeat bg-cover bg-center bg-[url('/fundo.jpg')] flex items-center justify-center">
+      <div className="lg:max-w-3xl max-w-96 text-center px-6 py-8 sm:px-12 lg:px-16 bg-white bg-opacity-50 rounded-lg shadow-xl backdrop-blur-md">
+        <h1 className="text-2xl sm:text-5xl font-extrabold text-transparent bg-clip-text animate-gradient bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-6 uppercase">
+          Curso Livre de Massagem Tântrica
         </h1>
-        
-        <h2 className="mt-6 font-extralight text-lg md:text-2xl lg:text-2xl text-tantra-light max-w-3xl mx-6">
-          Desperte Seu Prazer, Conecte-se com sua Essência e Viva Plenamente
-        </h2>
-      </div>
+        <p className="text-md sm:text-lg text-gray-800 leading-relaxed">
+          Estamos abrindo uma nova turma para o Curso Livre de Massagem Tântrica.
+          <br />
+          A massagem tântrica é uma poderosa ferramenta para vivenciar novas e profundas sensações, 
+          ressignificando a relação com o seu próprio corpo, as emoções, o prazer e a sexualidade.
+        </p>
+        <p className="text-base sm:text-xl font-black text-slate text animate-pulse mt-8">
+          Desperte a capacidade sensorial e seu potencial orgástico!
+        </p>
+        <button className="mt-6 px-6 py-3 text-white font-semibold animate-gradient bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-lg shadow-md transition-transform duration-300 hover:scale-110">
+          <Link href="#about" scroll={false}>Saiba Mais</Link>
+        </button>
 
-      <button
-        className="text-slate-300 mt-10 font-semibold underline hover:text-white transition-colors duration-300"
-        onClick={() => {
-          document.getElementById('1')?.scrollIntoView({ behavior: 'smooth' });
-        }}
-      >
-        <FaSortDown className="flex animate-bounce text-white size-8 mt-20"/>
-      </button>
-    </main>
+
+      </div>
+    </section>
   );
-}
+};
+
+export default Headline;

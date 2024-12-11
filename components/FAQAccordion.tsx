@@ -90,14 +90,14 @@ const FAQAccordion = () => {
               }`}
             >
               <div
-                className="mt-auto text-slate-800 z-10 py-5 rounded-md px-5 relative mx-auto"
+                className="mt-auto text-white z-10 py-5 rounded-md px-5 relative mx-auto"
                 style={{
-                  backgroundImage: 'url("/texture.png")',
-                  backgroundSize: 'cover',
-                  backgroundBlendMode: 'multiply',
+                  backgroundImage: 'url("/eye.jpg")',
+                  backgroundSize: 'center',
+                  backgroundBlendMode: 'darken',
                 }}
               >
-              <p className="px-4 py-2 text-md md:text-lg text-slate-800">{faq.answer}</p>
+              <p className="px-4 py-2 text-md md:text-lg text-white">{faq.answer}</p>
              </div> 
             </div>
           </div>

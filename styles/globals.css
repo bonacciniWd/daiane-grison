@@ -54,20 +54,6 @@ button {
 }
 
 
-.bg-tantra-dark {
-  background: linear-gradient(270deg, #4B2D47,  #2A1820, #BE163F);
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s ease infinite;
-}
-
-
-
-.bg-tantra {
-  background: linear-gradient(270deg, #4B2D47, #BE163F, #2A1820, );
-  background-size: 200% 200%;
-  animation: gradientAnimation 10s ease infinite;
-}
-
 .shadow-lg {
   box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.4);
 }
@@ -141,8 +127,8 @@ button {
     transform: scale(1);
   }
   50% {
-    opacity: 0.80;
-    transform: scale(1.10); /* Ajuste o valor conforme a intensidade do efeito desejado */
+    opacity: 1;
+    transform: scale(1.05); /* Ajuste o valor conforme a intensidade do efeito desejado */
   }
 }
 
@@ -154,133 +140,26 @@ button {
   border-color: #CBA148;
 }
 
-/* Gradiente animado */
-.bg-gradient-to-r {
-  background: linear-gradient(to right, #CBA148, #A77B13);
-  background-size: 200% 100%;
-  animation: gradientShift 3s linear infinite;
-}
-
-/* Animação de gradiente */
-@keyframes gradientShift {
+@keyframes gradient {
   0% {
-    background-position: 100% 0;
+    background-position: 0% 50%;
   }
   50% {
-    background-position: 0 0;
+    background-position: 100% 50%;
   }
   100% {
-    background-position: 100% 0;
+    background-position: 0% 50%;
   }
 }
 
-.testimonial-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
 }
 
-.testimonial-card {
-  background: #fff; /* Cor de fundo do cartão */
-  border-radius: 8px; /* Bordas arredondadas */
-  padding: 16px; /* Espaçamento interno */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra do cartão */
-  margin: 8px; /* Espaçamento entre cartões */
-  width: 80%; /* Largura do cartão */
-  max-width: 500px; /* Largura máxima do cartão */
-  text-align: center; /* Alinhamento do texto */
-}
-
-.testimonial-card img {
-  object-fit: cover; /* Ajuste a imagem para cobrir a área do cartão */
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra preta suave */
-}
-
-.text-shadow-2 {
-  text-shadow: 0.5px 0.5px 1px rgba(20, 20, 19, 0.77); /* Sombra preta suave */
-}
-
-/* Adiciona o efeito de pulsação ao botão */
-@keyframes pulses {
-  0% {
-    box-shadow: 0 0 0 0 rgba(219, 33, 179, 0.889);
-  }
-  70% {
-    box-shadow: 0 0 0 22px rgba(211, 179, 75, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(211, 179, 75, 0);
+@media (max-width: 768px) {
+  .bg-opacity-80 {
+    background-color: rgba(255, 255, 255, 0.9);
   }
 }
 
-.pulse-button {
-  background: linear-gradient(0deg, #CBA148, #D3B34B, #E8D881, #A77B13); /* Gradiente inicial */
-  background-size: 200% 200%; /* Isso permite a animação de transição suave */
-  text-decoration: none;
-  display: inline-block;
-  text-align: center;
-  border: 2px solid #D3B34B; /* Borda dourada */
-  font-weight: bold;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  color: #fff; /* Texto branco */
-  font-size: 1rem;
-  animation: pulses 2s infinite;
-  transition: background-position 0.5s ease-in-out, border-color 0.3s ease-in-out;
-  background-position: 0% 50%;
-}
-
-.pulse-button:hover {
-  background-position: 100% 50%; /* Inverte o gradiente ao passar o mouse */
-  background: linear-gradient(-270deg, #A77B13, #E8D881, #D3B34B, #CBA148); /* Gradiente invertido */
-  border-color: #A77B13; /* Muda a cor da borda no hover */
-  color: #fff;
-}
-
-@keyframes pulses {
-  0% {
-    box-shadow: 0 0 0 0 rgba(201, 220, 32, 0.889);
-  }
-  70% {
-    box-shadow: 0 0 0 22px rgba(201, 220, 32, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(2201, 220, 32, 0);
-  }
-}
-
-
-@keyframes ping {
-  75%, 100% {
-      transform: scale(1.2);
-      opacity: 0;
-  }
-}
-.animate-ping {
-  animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-      transform: translateY(-50%);
-      animation-timing-function: cubic-bezier(0.8,0,1,1);
-      opacity: 0.8;
-  }
-  50% {
-      transform: none;
-      animation-timing-function: cubic-bezier(0,0,0.2,1);
-      opacity: 0.2;
-  }
-
-}
-.animate-bounce {
-  animation: bounce 1s infinite;
-}
-
-.image-wrapper {
-  border-radius: 20px;
-  pointer-events: none;
-}
